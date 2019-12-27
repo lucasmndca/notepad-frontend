@@ -1,0 +1,103 @@
+:root {
+    --white: #fff;
+    --gray: #f3f3f3;
+    --blue: #2f67ff;
+    --darkBlue: #2a4692;
+    --default-border: 1px solid #2a4692;
+    --default-shadow: 0px 0px 3px #666;
+    --default-fontSize: 14px;
+    --default-titleSize: 65px;
+    --default-borderRadius: 20px;
+    --default-transition: .3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+*, ::before, ::after {
+    box-sizing: border-box;
+    font-family: 'Kulim Park', sans-serif;
+    letter-spacing: 1px;
+}
+
+body {
+    margin: 0px;
+    background: var(--gray);
+}
+
+.navbar {
+    width: 100%;
+    padding: 80px 0px;
+    background: var(--blue);
+    position: relative;
+    z-index: 1;
+}
+
+.navbar-title {
+    margin: 0px;
+    font-size: var(--default-titleSize);
+    font-weight: 500;
+    width: 100%;
+    text-align: center;
+    text-shadow: var(--default-shadow);
+    color: var(--white)
+}
+
+.navbar ul {
+    margin-left: 50%;
+    padding: 0px;
+    max-width: 265px;
+    transform: translateX(-50%);
+    list-style-type: none;
+    display: block;
+}
+
+.navbar li {
+    display: inline-block;
+    margin: 2px;
+}
+
+.navbar-link {
+    display: block;
+    background: var(--gray);
+    width: 120px;
+    padding: 8px;
+    font-size: var(--default-fontSize);
+    text-decoration: none;
+    text-align: center;
+    border-radius: var(--default-borderRadius);
+    transition: var(--default-transition);
+    box-shadow: var(--default-shadow);
+}
+
+.navbar-link:hover {
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.w3-animate-top {
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.w3-animate-top textarea {
+    height: 200px;
+    width: 90%;
+    margin-right: 10px;
+    border-radius: var(--default-borderRadius);
+    box-shadow: var(--default-shadow);
+    border: none;
+    padding: 20px;
+}
+
+.w3-animate-top button {
+    background: transparent;
+    border: none;
+    color: var(--blue);
+    transition: var(--default-transition);
+}
+
+.w3-animate-top button:hover {
+    cursor: pointer;
+    padding-bottom: 30px;
+}
