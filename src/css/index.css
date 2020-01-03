@@ -2,7 +2,7 @@
     --white: #fff;
     --gray: #f3f3f3;
     --blue: #2f67ff;
-    --darkBlue: #2a4692;
+    --darkBlue: #3162e9;
     --default-border: 1px solid #2a4692;
     --default-shadow: 0px 0px 3px #666;
     --default-fontSize: 14px;
@@ -15,6 +15,7 @@
     box-sizing: border-box;
     font-family: 'Kulim Park', sans-serif;
     letter-spacing: 1px;
+    outline: none;
 }
 
 body {
@@ -100,4 +101,8 @@ body {
 .w3-animate-top button:hover {
     cursor: pointer;
     padding-bottom: 30px;
+}
+
+textarea {
+    resize: none;
 }
