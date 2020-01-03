@@ -3,6 +3,7 @@
     --gray: #f3f3f3;
     --blue: #2f67ff;
     --darkBlue: #3162e9;
+    --darkerGray: #ddd;
     --default-border: 1px solid #2a4692;
     --default-shadow: 0px 0px 3px #666;
     --default-fontSize: 14px;
@@ -89,20 +90,49 @@ body {
     box-shadow: var(--default-shadow);
     border: none;
     padding: 20px;
+    resize: none;
 }
 
-.w3-animate-top button {
+.w3-animate-top > button {
     background: transparent;
     border: none;
     color: var(--blue);
     transition: var(--default-transition);
 }
 
-.w3-animate-top button:hover {
+.w3-animate-top > button:hover {
     cursor: pointer;
     padding-bottom: 30px;
 }
 
-textarea {
-    resize: none;
+.note-container {
+    width: 100%;
+    padding: 20px;
+    border-radius: var(--default-borderRadius);
+    box-shadow: var(--default-shadow);
+    margin: 10px;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+    min-width: 33%;
+}
+
+.note-container > h3 {
+    border-bottom: 1px solid #d5d5d5;
+}
+
+.note-container > button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    line-height: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+}
+
+.note-container > button:hover {
+    cursor: pointer;
+    background: var(--darkerGray);
 }
