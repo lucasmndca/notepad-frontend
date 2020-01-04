@@ -1,25 +1,17 @@
 //Constants
-const navbar = {
-    title: '<i class="large material-icons" style="font-size: 100px">assignment</i>',
-    homeLink: 'Início ',
-    notesLink: 'Minhas Notas'
-}
-
-const add = {
-    textareaPlaceholder: 'Escreva sua nota aqui',
-    button: '<i class="large material-icons" style="font-size: 50px">add</i>'
+const icons = {
+    navbar: {
+		TITLE: '<i class="large material-icons" style="font-size: 100px">assignment</i>'
+	},
+	notes: {
+		BUTTON: '<i class="large material-icons">more_vert</i>'
+	}
 }
 
 /**
- * Returns the navbar constants
+ * Returns the app's icons
  * implemented by: Lucas Dias
- * 27/12/2019
+ * created on: 27/12/2019
+ * updated on: 03/01/2020
  */
-const getNavbarConstants = () => navbar
-
-/**
- * Returns the 'add new note' constants
- * implemented by: Lucas Dias
- * 27/12/2019
- */
-const getAddConstants = () => add
+const getIcons = () => icons
