@@ -67,10 +67,16 @@ body {
     max-height: 300px;
     overflow: hidden;
     position: relative;
+	z-index: 20px;
 }
 
 .note-container > h3 {
     border-bottom: 1px solid #d5d5d5;
+	position: relative;
+}
+
+.note-container > p {
+	max-width: 230px;
 }
 
 .note-container > button {
@@ -87,4 +93,28 @@ body {
 .note-container > button:hover {
     cursor: pointer;
     background: var(--darkerGray);
+}
+
+.note-container > .note-menu {
+	position: absolute;
+	top: -10px;
+	right: -10px;
+	width: 50px;
+	height: 310px;
+	background: var(--darkerGray);
+	box-shadow: var(--default-shadow);
+	padding: 20px 2px 2px 2px;
+	display: none;
+}
+
+.note-menu-button {
+	background: transparent;
+	border: none;
+	margin-bottom: 2px;
+}
+
+.note-menu-button:hover {
+	cursor: pointer;
+	text-shadow: var(--default-shadow);
+	color: var(--blue);
 }

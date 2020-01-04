@@ -20,10 +20,22 @@
     </nav>
     <section class="w3-animate-top">
         <div class="note-container">
-            <h3 class="note-title">Título</h3>
+			<h3 class="note-title">Título</h3>
 			<p>12/06/2019</p>
             <p class="note-body">Corpo do documento sadhasjdsa dsahdskjsad asdjk</p>
-            <button class="note-button"></button>
+            <button 
+				class="note-button"
+				onclick="openNoteMenu(this)"
+				id="a"
+			></button>
+			<div 
+				class="note-menu w3-animate-right"
+				id="aa"
+			>
+				<button class="note-menu-button return" onclick="closeNoteMenu(this)"></button>
+				<button class="note-menu-button delete"></button>
+				<button class="note-menu-button edit"></button>
+			</div>
         </div>
         
         <div class="note-container">
@@ -35,6 +47,7 @@
     </section>
     <script src="../constants/constants.js"></script>
     <script src="../scripts/loadConstants.js"></script>
+	<script src="../scripts/handleNotes.js"></script>
 </body>
 
 </html>

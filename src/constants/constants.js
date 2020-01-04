@@ -5,6 +5,11 @@ const icons = {
 	},
 	notes: {
 		BUTTON: '<i class="large material-icons">more_vert</i>'
+	},
+	noteMenu: {
+		RETURN: '<i class="large material-icons">keyboard_return</i>',
+		DELETE: '<i class="large material-icons">delete</i>',
+		EDIT: '<i class="large material-icons">edit</i>'
 	}
 }
 

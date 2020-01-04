@@ -9,7 +9,13 @@ const injectConstant = (element, constant) => {
 let iconsConst = getIcons()
 let navbarTitle = document.getElementsByClassName('navbar-title')
 let buttons = document.getElementsByClassName('note-button')
+let noteMenuReturnButtons = document.getElementsByClassName('return')
+let noteMenuDeleteButtons = document.getElementsByClassName('delete')
+let noteMenuEditButtons = document.getElementsByClassName('edit')
 
 //Injecting constants
 injectConstant(navbarTitle, iconsConst.navbar.TITLE)
 injectConstant(buttons, iconsConst.notes.BUTTON)
+injectConstant(noteMenuReturnButtons, iconsConst.noteMenu.RETURN)
+injectConstant(noteMenuDeleteButtons, iconsConst.noteMenu.DELETE)
+injectConstant(noteMenuEditButtons, iconsConst.noteMenu.EDIT)
