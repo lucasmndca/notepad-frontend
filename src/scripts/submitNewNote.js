@@ -1,3 +1,0 @@
-const submitNote = () => {
-    alert('Submit')
-}

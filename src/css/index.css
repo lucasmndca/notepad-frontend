@@ -30,6 +30,7 @@ body {
     background: var(--blue);
     position: relative;
     z-index: 1;
+	box-shadow: var(--default-shadow);
 }
 
 .navbar-title {
@@ -42,75 +43,31 @@ body {
     color: var(--white)
 }
 
-.navbar ul {
-    margin-left: 50%;
-    padding: 0px;
-    max-width: 265px;
-    transform: translateX(-50%);
-    list-style-type: none;
-    display: block;
-}
-
-.navbar li {
-    display: inline-block;
-    margin: 2px;
-}
-
-.navbar-link {
-    display: block;
-    background: var(--gray);
-    width: 120px;
-    padding: 8px;
-    font-size: var(--default-fontSize);
-    text-decoration: none;
-    text-align: center;
-    border-radius: var(--default-borderRadius);
-    transition: var(--default-transition);
-    box-shadow: var(--default-shadow);
-}
-
 .navbar-link:hover {
     border-radius: 3px;
     cursor: pointer;
 }
 
 .w3-animate-top {
+<<<<<<< HEAD
 <<<<<<< Updated upstream
     width: 100%;
 =======
     max-width: 1200px;
 >>>>>>> Stashed changes
+=======
+    max-width: 1000px;
+>>>>>>> ef0bd9ca86a6d4fba76510e0782b376837518a72
     padding: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.w3-animate-top textarea {
-    height: 200px;
-    width: 90%;
-    margin-right: 10px;
-    border-radius: var(--default-borderRadius);
-    box-shadow: var(--default-shadow);
-    border: none;
-    padding: 20px;
-    resize: none;
-}
-
-.w3-animate-top > button {
-    background: transparent;
-    border: none;
-    color: var(--blue);
-    transition: var(--default-transition);
-}
-
-.w3-animate-top > button:hover {
-    cursor: pointer;
-    padding-bottom: 30px;
+	flex-wrap: wrap;
+	margin: 0px auto;
 }
 
 .note-container {
-    width: 100%;
+    width: 300px;
     padding: 20px;
     background: var(--white);
     border-radius: var(--default-borderRadius);
@@ -119,18 +76,23 @@ body {
     max-height: 300px;
     overflow: hidden;
     position: relative;
-    min-width: 33%;
+	z-index: 20px;
 }
 
 .note-container > h3 {
     border-bottom: 1px solid #d5d5d5;
+	position: relative;
+}
+
+.note-container > p {
+	max-width: 230px;
 }
 
 .note-container > button {
     position: absolute;
     background: var(--white);
     top: 20px;
-    right: 20px;
+    right: 10px;
     line-height: 10px;
     width: 40px;
     height: 40px;
@@ -141,8 +103,11 @@ body {
 .note-container > button:hover {
     cursor: pointer;
     background: var(--darkerGray);
+<<<<<<< HEAD
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> ef0bd9ca86a6d4fba76510e0782b376837518a72
 }
 
 .note-container > .note-menu {
@@ -167,6 +132,7 @@ body {
 	cursor: pointer;
 	text-shadow: var(--default-shadow);
 	color: var(--blue);
+<<<<<<< HEAD
 }
 
 .note-add {
@@ -186,4 +152,6 @@ body {
 .note-add:hover {
     cursor: pointer;
 >>>>>>> Stashed changes
+=======
+>>>>>>> ef0bd9ca86a6d4fba76510e0782b376837518a72
 }
