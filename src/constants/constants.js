@@ -1,15 +1,10 @@
 //Constants
-const navbar = {
-    title: '<i class="large material-icons" style="font-size: 100px">assignment</i>',
-    homeLink: 'Início ',
-    notesLink: 'Minhas Notas'
-}
+
 const icons = {
     navbar: {
 		TITLE: '<i class="large material-icons" style="font-size: 100px">assignment</i>'
 	},
 	notes: {
-		BUTTON: '<i class="large material-icons">more_vert</i>',
 		ADD: '<i class="large material-icons">add</i>'
 	},
 	noteMenu: {
@@ -19,6 +14,10 @@ const icons = {
 	}
 }
 
+const parameters = {
+	URL: 'http://localhost:3000/notes'
+}
+
 /**
  * Returns the app's icons
  * implemented by: Lucas Dias
@@ -26,3 +25,10 @@ const icons = {
  * updated on: 03/01/2020
  */
 const getIcons = () => icons
+
+/**
+ * Returns the app's parameters
+ * implemented by: Lucas Dias
+ * created on: 06/01/2020
+ */
+const getParameters = () => parameters

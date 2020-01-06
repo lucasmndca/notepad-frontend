@@ -1,5 +1,5 @@
 const openNoteMenu = e => {
-	let menuId = e.id + e.id
+	let menuId = '_' + e.id
 	let getMenu = document.getElementById(menuId)
 	getMenu.style.display = 'block'
 	setTimeout(() => { 
@@ -17,3 +17,5 @@ const closeNoteMenu = e => {
 		noteButton.style.display = 'block' 
 	}, 100)
 }
+
+const deleteNote = () => alert("Esta funcionalidade ainda não foi implementada")
