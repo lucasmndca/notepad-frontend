@@ -26,7 +26,7 @@ const templates = {
 }
 
 window.onload = () => {
-    const fetchUsers = async () => {
+    const fetchNotes = async () => {
         try {
             const res = await fetch(getParameters().URL);
             if (!res.ok) {
@@ -39,9 +39,8 @@ window.onload = () => {
         }
     }
 
-    fetchUsers();
+    fetchNotes();
     localStorage.setItem('buttonId', JSON.stringify(0))
-    console.log(localStorage.getItem('buttonId'))
 }
 
 const populateData = data => {

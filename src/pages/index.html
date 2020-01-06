@@ -18,7 +18,17 @@
     <nav class="navbar">
         <h2 class="navbar-title"></h2>
     </nav>
-    <button class="note-add"></button>
+    <button class="note-add" onclick="openAddNoteModal()"></button>
+    <section class="note-add-modal-container">
+        <button onclick="closeAddNoteModal()" class="note-add-modal-close"></button>
+        <div class="note-add-modal">
+            <form id="note-post-data">
+                <input type="text" />
+                <textarea></textarea>
+                <button onclick="addNote()"></button>
+            </form>
+        </div>
+    </section>
     <section class="w3-animate-top"></section>
     <script src="../constants/constants.js"></script>
     <script src="../scripts/loadConstants.js"></script>

@@ -2,6 +2,7 @@
     --white: #fff;
     --gray: #f3f3f3;
     --blue: #2f67ff;
+    --transparentBlack: #333333aa;
     --darkBlue: #3162e9;
     --darkerGray: #ddd;
     --default-border: 1px solid #aaa;
@@ -128,13 +129,83 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    line-height: 10px;
+}
+
+.note-add, 
+.note-add-modal button {
     background: var(--blue);
     box-shadow: var(--default-shadow);
     border: var(--default-border);
     color: var(--white);
-    line-height: 10px;
+    
 }
 
-.note-add:hover {
+.note-add:hover,
+.note-add-modal button:hover,
+.note-add-modal-close:hover {
     cursor: pointer;
+    opacity: .75;
+}
+
+.note-add-modal-container {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    background: var(--transparentBlack);
+    z-index: 10;
+    padding: 20px;
+    display: none;
+    transition: .3s;
+}
+
+.note-add-modal {
+    width: 500px;
+    height: 300px;
+    padding: 20px;
+    background: var(--white);
+    border-radius: var(--default-borderRadius);
+    box-shadow: var(--default-shadow);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: calc(300px * 0.5 * (-1));
+    margin-left: calc(500px * 0.5 * (-1));
+}
+
+.note-add-modal input, 
+.note-add-modal textarea,
+.note-add-modal button {
+    width: 100%;
+    margin: 10px 0px;
+    border: none;
+    padding: 10px;
+}
+
+.note-add-modal input,
+.note-add-modal textarea {
+    border-bottom: var(--default-border);
+}
+
+.note-add-modal textarea {
+    height: 117px;
+}
+
+.note-add-modal button {
+    border-radius: var(--default-borderRadius);
+}
+
+.note-add-modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    border: none;
+    line-height: 10px;
+    color: var(--white);
+    width: 32px;
+    height: 32px;
+    font-size: 1.2em;
 }
