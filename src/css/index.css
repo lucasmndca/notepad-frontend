@@ -4,7 +4,7 @@
     --blue: #2f67ff;
     --darkBlue: #3162e9;
     --darkerGray: #ddd;
-    --default-border: 1px solid #2a4692;
+    --default-border: 1px solid #aaa;
     --default-shadow: 0px 0px 3px #666;
     --default-fontSize: 14px;
     --default-titleSize: 65px;
@@ -49,7 +49,7 @@ body {
 }
 
 .w3-animate-top {
-    max-width: 1000px;
+    max-width: 1200px;
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -61,6 +61,7 @@ body {
 .note-container {
     width: 300px;
     padding: 20px;
+    background: var(--white);
     border-radius: var(--default-borderRadius);
     box-shadow: var(--default-shadow);
     margin: 10px;
@@ -81,6 +82,7 @@ body {
 
 .note-container > button {
     position: absolute;
+    background: var(--white);
     top: 20px;
     right: 10px;
     line-height: 10px;
@@ -117,4 +119,22 @@ body {
 	cursor: pointer;
 	text-shadow: var(--default-shadow);
 	color: var(--blue);
+}
+
+.note-add {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--blue);
+    box-shadow: var(--default-shadow);
+    border: var(--default-border);
+    color: var(--white);
+    line-height: 10px;
+}
+
+.note-add:hover {
+    cursor: pointer;
 }

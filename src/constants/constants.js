@@ -4,7 +4,8 @@ const icons = {
 		TITLE: '<i class="large material-icons" style="font-size: 100px">assignment</i>'
 	},
 	notes: {
-		BUTTON: '<i class="large material-icons">more_vert</i>'
+		BUTTON: '<i class="large material-icons">more_vert</i>',
+		ADD: '<i class="large material-icons">add</i>'
 	},
 	noteMenu: {
 		RETURN: '<i class="large material-icons">keyboard_return</i>',
