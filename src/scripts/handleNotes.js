@@ -48,16 +48,16 @@ const closeAddNoteModal = () => {
 	}, 300)
 }
 
-const addNote = event => {
-	event.preventDefault();
+const addNote = () => {
+	
+	let form = document.getElementById('note-post-data')
+	let title = form.childNodes[1].value
+	let body = form.childNodes[3].value
 
-	let tittle = document.getElementById('tittle').value;
-	let body = document.getElementById('body').value;
-
-	fetch('https://jsonplaceholder.typicode.com/posts', {
+	fetch(getParameters().URL, {
 		method: 'POST',
-		headers: new Headers(),
-		body: JSON.stringify({ tittle: tittle, body: body })
+		headers:  {"content-type" : "application/json; charset=UTF-8" },
+		body: JSON.stringify({ title: title, body: body })
 	}).then((res) => res.json())
 		.then((data) => console.log(data))
 		.catch((err) => console.log(err))

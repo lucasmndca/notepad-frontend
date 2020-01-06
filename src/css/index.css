@@ -27,7 +27,7 @@ body {
 
 .navbar {
     width: 100%;
-    padding: 80px 0px;
+    padding: 20px 0px;
     background: var(--blue);
     position: relative;
     z-index: 1;
@@ -41,7 +41,8 @@ body {
     width: 100%;
     text-align: center;
     text-shadow: var(--default-shadow);
-    color: var(--white)
+    color: var(--white);
+    line-height: 15px;
 }
 
 .navbar-link:hover {
@@ -50,17 +51,18 @@ body {
 }
 
 .w3-animate-top {
-    max-width: 1200px;
-    padding: 50px;
+    max-width: 1065px;
+    padding: 10px 50px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: left;
+    align-items: left;
 	flex-wrap: wrap;
-	margin: 0px auto;
+    margin: 0px auto;
 }
 
 .note-container {
-    width: 300px;
+    width: 460px;
+    min-height: 300px;
     padding: 20px;
     background: var(--white);
     border-radius: var(--default-borderRadius);
@@ -78,7 +80,7 @@ body {
 }
 
 .note-container > p {
-	max-width: 230px;
+	max-width: 400px;
 }
 
 .note-container > button {
@@ -130,6 +132,7 @@ body {
     height: 50px;
     border-radius: 50%;
     line-height: 10px;
+    z-index: 20;
 }
 
 .note-add, 
@@ -190,7 +193,7 @@ body {
 }
 
 .note-add-modal textarea {
-    height: 117px;
+    height: 70px;
 }
 
 .note-add-modal button {
@@ -209,3 +212,13 @@ body {
     height: 32px;
     font-size: 1.2em;
 }
+
+.note-add-header {
+    margin: 2px;
+}
+
+@media only screen and (max-width: 1078px) {
+    .note-container {
+        width: 100%;
+    }
+  }

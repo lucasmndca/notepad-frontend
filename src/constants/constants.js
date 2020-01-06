@@ -6,6 +6,7 @@ const icons = {
 	},
 	notes: {
 		ADD: '<i class="large material-icons">add</i>',
+		NEW_NOTE_BUTTON_HEADER: 'Add a new note',
 		NEW_NOTE_INPUT_PLACEHOLDER: 'Note title',
 		NEW_NOTE_TEXTAREA_PLACEHOLDER: 'Your text goes here',
 		NEW_NOTE_BUTTON_PLACEHOLDER: 'Add',
