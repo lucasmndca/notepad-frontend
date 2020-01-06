@@ -49,19 +49,7 @@ body {
 }
 
 .w3-animate-top {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    width: 100%;
-=======
     max-width: 1200px;
->>>>>>> Stashed changes
-=======
-    max-width: 1000px;
->>>>>>> ef0bd9ca86a6d4fba76510e0782b376837518a72
-=======
-    max-width: 1200px;
->>>>>>> master
     padding: 50px;
     display: flex;
     justify-content: center;
@@ -107,11 +95,6 @@ body {
 .note-container > button:hover {
     cursor: pointer;
     background: var(--darkerGray);
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> ef0bd9ca86a6d4fba76510e0782b376837518a72
 }
 
 .note-container > .note-menu {
@@ -136,10 +119,6 @@ body {
 	cursor: pointer;
 	text-shadow: var(--default-shadow);
 	color: var(--blue);
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> master
 }
 
 .note-add {
@@ -158,10 +137,4 @@ body {
 
 .note-add:hover {
     cursor: pointer;
-<<<<<<< HEAD
->>>>>>> Stashed changes
-=======
->>>>>>> ef0bd9ca86a6d4fba76510e0782b376837518a72
-=======
->>>>>>> master
 }
