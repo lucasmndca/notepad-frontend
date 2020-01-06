@@ -13,9 +13,13 @@ let noteMenuReturnButtons = document.getElementsByClassName('return')
 let noteMenuDeleteButtons = document.getElementsByClassName('delete')
 let noteMenuEditButtons = document.getElementsByClassName('edit')
 <<<<<<< HEAD
+<<<<<<< HEAD
 let noteAddButton = document.getElementsByClassName('note-add')
 =======
 >>>>>>> ef0bd9ca86a6d4fba76510e0782b376837518a72
+=======
+let noteAddButton = document.getElementsByClassName('note-add')
+>>>>>>> master
 
 //Injecting constants
 injectConstant(navbarTitle, iconsConst.navbar.TITLE)
@@ -23,8 +27,13 @@ injectConstant(buttons, iconsConst.notes.BUTTON)
 injectConstant(noteMenuReturnButtons, iconsConst.noteMenu.RETURN)
 injectConstant(noteMenuDeleteButtons, iconsConst.noteMenu.DELETE)
 <<<<<<< HEAD
+<<<<<<< HEAD
 injectConstant(noteMenuEditButtons, iconsConst.noteMenu.EDIT)
 injectConstant(noteAddButton, iconsConst.notes.ADD)
 =======
 injectConstant(noteMenuEditButtons, iconsConst.noteMenu.EDIT)
 >>>>>>> ef0bd9ca86a6d4fba76510e0782b376837518a72
+=======
+injectConstant(noteMenuEditButtons, iconsConst.noteMenu.EDIT)
+injectConstant(noteAddButton, iconsConst.notes.ADD)
+>>>>>>> master

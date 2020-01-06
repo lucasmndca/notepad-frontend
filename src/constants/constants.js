@@ -14,11 +14,16 @@ const icons = {
 	},
 	notes: {
 <<<<<<< HEAD
+<<<<<<< HEAD
 		BUTTON: '<i class="large material-icons">more_vert</i>',
 		ADD: '<i class="large material-icons">add</i>'
 =======
 		BUTTON: '<i class="large material-icons">more_vert</i>'
 >>>>>>> ef0bd9ca86a6d4fba76510e0782b376837518a72
+=======
+		BUTTON: '<i class="large material-icons">more_vert</i>',
+		ADD: '<i class="large material-icons">add</i>'
+>>>>>>> master
 	},
 	noteMenu: {
 		RETURN: '<i class="large material-icons">keyboard_return</i>',
